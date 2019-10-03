@@ -9,8 +9,6 @@ const args: string[] = process.argv; //for using command line arguments. Don't f
 
 let mainProcess = () => {
     let newList = new list();
-    // let data = fs.readFileSync('list.txt', 'utf-8')
-    // newList._list = data.split("\r\n");
 
     if (args.length == 2) {
         let help = fs.readFileSync('help.txt', 'utf-8');
@@ -23,7 +21,7 @@ let mainProcess = () => {
         newList.addTask(args[3]);
     } else if (args[2] == '-a' && !args[3]) {
         console.log("Unable to add: no task provided");
-    } else if (args[2] == '-r') {
+    } else if (args[2] == '-r' && args[3] == 2 {
 
     } else if (args[2] == '-c') {
 

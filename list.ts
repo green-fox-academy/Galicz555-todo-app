@@ -2,15 +2,15 @@ import { read } from "fs";
 const fs = require('fs');
 
 export class list {
-    public _list: string[]
+    private _list: string[]
 
     constructor() {
         this._list = fs.readFileSync('list.txt', 'utf-8').split("\r\n");
     }
 
-    public isItEmpty():boolean{
-        if(!this._list[0]){
-        return true;
+    public isItEmpty(): boolean {
+        if (!this._list[0]) {
+            return true;
         };
     }
 
@@ -25,4 +25,9 @@ export class list {
             console.log((i + 1) + " - " + this._list[i]);
         }
     }
+
+    public removeTask(){
+
+    }
+
 }

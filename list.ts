@@ -12,7 +12,7 @@ export class list {
         this._list = fs.readFileSync('list.txt', 'utf-8').split("\r\n");
         if(!this._list[0]){
         return true;
-        } else {console.log("you failed")};
+        };
     }
 
     public addTask(task: string) {

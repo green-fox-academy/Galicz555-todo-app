@@ -19,5 +19,8 @@
   "devDependencies": {
     "@types/tape": "^4.2.33",
     "tape": "^4.11.0"
+  },
+  "dependencies": {
+    "@types/node": "^12.7.9"
   }
 }
